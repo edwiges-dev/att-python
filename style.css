@@ -1,122 +1,193 @@
-.titulo{
-    color: rgb(217, 185, 247);
+/* === Estrutura Geral === */
+body.container {
+    background-color: #121212; /* fundo cinza bem escuro */
+    color: #f5f5f5; /* texto claro */
     font-family: Arial, Helvetica, sans-serif;
-    font-style: initial;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
-.titulo-formacao{
-    color: rgb(217, 185, 247);
-    font-family: Arial, Helvetica, sans-serif;
+
+/* === Cabeçalhos === */
+.titulo,
+.titulo-formacao,
+.titulo-competencias,
+.titulo-resumo {
+    color: #d9b9f7; /* roxo suave */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo-formacao,
+.titulo-competencias {
+    font-size: 1.5rem;
     font-style: italic;
+}
+
+.titulo-resumo {
+    font-size: 1.4rem;
+}
+
+/* === Subtítulo === */
+.subtitulo {
     text-align: center;
-}
-.titulo-competencias{
-    color: rgb(217, 185, 247);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: -10px;
 }
 
-
-
-.container{
-    background-color: rgb(0, 0, 0);
-   
+/* === Imagem de Perfil === */
+.imagem {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin: 15px auto;
+    display: block;
 }
 
-
-
-.tabela-competencias{
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    border-spacing:0;
-    border-collapse: collapse;
-    width: 80%;
-    text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.651);
-    border-radius: 5px;
-}
-
-.imagem{
-    width: 8%;
-    height: 8%;
-    border-radius: 150px;
-    border: 3px solid rgb(255, 255, 255);
-    
-   
-}
-.descricao-formacao{
-    
-    text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: rgba(255, 255, 247);
-    border-radius: 5px;
-}
-
-header{
-    display: flex;  
-    flex-direction: column;
-    flex-wrap: wrap;    align-content: center;
-
-   
-}
-
-.menu{
-        justify-content: space-between;
-    
-    
-
-
-}
-.menu ul{ 
+/* === Navegação === */
+.menu ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-
-    
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin: 0;
+    background-color: #1e1e1e; /* barra mais clara que o fundo */
+    border-bottom: 1px solid #333;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
-
-    
-
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-.titulo-resumo{
-    
+
+.menu a:hover {
+    color: #d9b9f7; /* hover roxo */
+}
+
+/* === Seções === */
+.resumo,
+.formacao,
+.competencias {
+    padding: 20px;
     text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: rgba(217, 185, 255);
-    border-radius: 5px
 }
 
-.subtitulo-resumo{
-   
-    text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: rgb(245, 245, 245);
-    border-radius: 5px
-}
-.resumo{
-    
-    text-align: center;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: rgb(245, 245, 245);
-    border-radius: 5px
+.subtitulo-resumo,
+.descricao-formacao {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 8px 0;
 }
 
-.competencias{
+/* === Formação sem bolinhas === */
+.formacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* === Tabela de Competências === */
+.tabela-competencias {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tabela-competencias thead {
+    background-color: #2a2a2a;
+    color: #d9b9f7;
+}
+
+.tabela-competencias th,
+.tabela-competencias td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.tabela-competencias tr:hover {
+    background-color: #1f1f1f;
+}
+
+/* === Rodapé === */
+.rodape {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    background-color: #1e1e1e;
+    color: #bbb;
+    border-top: 1px solid #333;
+}
+/* === Projetos === */
+.projetos-lista {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.projeto-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(217,185,247,0.3);
+}
+
+.projeto-imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.projeto-titulo {
+    color: #d9b9f7;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.projeto-descricao {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.projeto-link {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #d9b9f7;
+    color: #121212;
+    transition: background-color 0.3s;
+}
+
+.projeto-link:hover {
+    background-color: #b18cd9;
+    color: #fff;
 }
