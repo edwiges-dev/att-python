@@ -1,73 +1,43 @@
 .titulo{
-    color: blueviolet;
+    color: rgb(217, 185, 247);
     font-family: Arial, Helvetica, sans-serif;
     font-style: initial;
     text-align: center;
 }
 .titulo-formacao{
-    color: rgb(178, 125, 228);
+    color: rgb(217, 185, 247);
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+    text-align: center;
 }
 .titulo-competencias{
-    color: rgb(178, 125, 228);
+    color: rgb(217, 185, 247);
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-}
-
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    border-radius:10px;
-    color: rgba(255, 0, 0, 0.651);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
     text-align: center;
-    
 }
+
+
+
 .container{
     background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0.651);
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    text-align: center;
+   
 }
-.competencias{
-    text-align: center;
-}
-.resumo{
-    text-align: center;
-}
-.formacao{
-    text-align: center;
-}
+
 
 
 .tabela-competencias{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     border-spacing:0;
-    padding-left: 30%;
     border-collapse: collapse;
     width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
     text-align: center;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     color: rgba(255, 255, 255, 0.651);
     border-radius: 5px;
-}
-.tabela-competencias{
-    padding: 10px;
-    
-    border: 1px solid rgb(255, 255, 255);
-    width: 10
-
 }
 
 .imagem{
@@ -75,25 +45,78 @@
     height: 8%;
     border-radius: 150px;
     border: 3px solid rgb(255, 255, 255);
-    padding: 15px;
+    
+   
 }
-.descricao -formacao{
-    margin-left: 10%;
-    margin-top: 10%;
+.descricao-formacao{
+    
     text-align: center;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    color: rgba(255, 255, 255, 0.651);
+    color: rgba(255, 255, 247);
     border-radius: 5px;
 }
 
-.menu{
-    display: flex;
-    justify-content:
-    space-between;
-    list-style: none;
-    text-decoration: none;
+header{
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: wrap;    align-content: center;
 
+   
 }
 
+.menu{
+        justify-content: space-between;
+    
+    
+
+
+}
+.menu ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.menu a{
+    text-decoration: none;
+
+    
+
+}
+.titulo-resumo{
+    
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgba(217, 185, 255);
+    border-radius: 5px
+}
+
+.subtitulo-resumo{
+   
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgb(245, 245, 245);
+    border-radius: 5px
+}
+.resumo{
+    
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgb(245, 245, 245);
+    border-radius: 5px
+}
+
+.competencias{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
