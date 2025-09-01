@@ -1,79 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Dê yu</title>
     <link rel="stylesheet" href="style.css">
+    <title>portifolio de de yu</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <divn class="logo">Dê yu chien</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre mim</a></li>
-                <li><a href="#">Meus projetos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <h1>Portfólio de Dê yu</h1>
-    </header>
-    <main>
-        <section class="hero">
-            <div>
-                <h1> Olá, eu sou Dê yu</h1>
-                <h2>Desenvolvedor web</h2>
-                <p>Eu sou um desenvolvedor web apaixonado por criar sites modernos e intuitivos para ajudar pessoas a encontrar o que procuram.</p>
-                <p class="texto-baixo">Eu amo experimentar coisas novas e sempre busco novas maneiras de explorar o mundo.</p>
-            </div>
-            <div class="botao">
-                <a href="#">Emtre em contato</a>
-            </div>
     
-        </section>
-        <section class="sobre">
-            <h2>Sobre mim</h2>
-            <div class="contener-sobre">
-                <div class="texto-sobre">
-                    <p>Olá! Sou o Dê yu, um desenvolvedor web apaixonado por transformar ideias em experiências digitais incríveis. Com experiência em HTML e CSS, me dedico a criar páginas que não são apenas visualmente atraentes, mas também fáceis de usar e totalmente responsivas.</p>
+</body>
+<header>
+    <nav >
+        <div class="logo">Dê yu chien</div>
+        <ul>
+            <li><a href="#inicio">Início</a> </li>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#portifolio">portifolio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            
+        </ul>
+
+    </nav>
+
+
+</header>
+
+<main>
+
+            <section id="inicio"class="Hero">
+        <div>
+            <h1>Olá, sou De yu,<br>um desenvolvedor WEB</h1>
+            <p>Criando sites bonitos e funcionais.Vamos trabalhar juntos!</p>
+            <a href="#contato">Entre em Contato</a>
+
+        </div>
+            <section id="sobre" class="secao">
+            <h2>Sobre Mim</h2>
+            <div class="container-sobre">
+                <div class="Texto sobre">
+                    <p>Olá! Sou Dê yu , um desenvolvedor web apaixonada por transformar ideias em experiências digitais incríveis. Com experiência em HTML e CSS, me dedico a criar páginas que não são apenas visualmente atraentes, mas também fáceis de usar e totalmente responsivas.</p>
                     <p>Meu foco é em design limpo e moderno, garantindo que cada projeto reflita profissionalismo e atenção aos detalhes. Estou sempre buscando aprender novas tecnologias para entregar soluções inovadoras e de alta qualidade.</p>
-                    <p>Eu amo aprender e explorar novos lugares, e sempre estou em busca de novas oportunidades de aprendizado e crescimento pessoal.</p>
+                    
                 </div>
-                    <div class="imagem-sobre">
-                        <img src="imagem.png" alt="imagem" class="imagem-sobre">
-                    </div>
+
+                <div class="imagem-sobre">
+                    <img src="/html/foto p.png" alt="Minha foto de perfil">
+
+                </div>
 
             </div>
-        </section>
-        <section class="Portfólio">
-            <h2>Meus projetos</h2>
-            <div class="grid-portfólio">
-                <div class="card">
-                    <img src="imagem.png" alt="imagem" class="imagem-card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1</p>
-                    <a href="#">Ver mais</a>
+
+
+            </section>
+            <section id="portifolio" class="secao">
+                <h2>Meu portifólio</h2>
+                <div class="grid-portifólio">
+                    <div class="card-projeto">
+                        <img src="/html/Imagem de Produto para Hotmart Curso de E-Commerce Ilustração Divertido Azul Amarelo.png" alt="projeto 1">
+                        <h3>Projeto 1</h3>
+                        <p>landing page de e-commerce moderna</p>
+                    </div>
+
+                    <div class="card-projeto">
+                        <img src="/html/Instagram.png" alt="projeto 2">
+                        <h3>projeto 2</h3>
+                        <p>site institucional para uma startup de tecnologia</p>
+
+                    </div>
+                    <div class="card-projeto">
+                        <img src="/html/Beige Photo-centric Simple Step-by-Step Blog & News Instagram Post.png" alt="projeto 3">
+                        <h3>Projeto 3</h3>
+                        <p>Design de blog minimalista e responsivo</p>
+
+
+                    </div>
+                    
+
                 </div>
-                <div class="card">
-                    <img src="imagem.png" alt="imagem" class="imagem-card">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto 2</p>
-                    <a href="#">Ver mais</a>
-                </div>
-                <div class="card">
-                    <img src="imagem.png" alt="imagem" class="imagem-card">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do projeto 3</p>
-                    <a href="#">Ver mais</a>
-            </div>
                 
+
+
+
+            </section>
+
+            <section id="contato" class="secao">
+                <h2>Entre em Contato</h2>
+                <p> Envie-me envie uma mensagem para conversamos sobre seu projeto</p>
+                <form class=" formulário-contato">
+                    <input type="text" name="name" placeholder="seu nome" required >
+                    <input type="email"email="email"placeholder= "seu email" required>
+                    <textarea name= "message" rows="5" maxlength="300"
+                     placeholder="sua mensagem"(maximo de 300 caracteres)required></textarea>
+
+                </form>
                 
-               
-        </section>
-        <section>
-            <h2>Meus projetos</h2>5
-        </section>
-    </main>
-</body>
+            </section>
+        
+
+        
+        
+
+
+            </section>
+
+<footer>
+    <p>&copy;2025 De yu .Todos os direitos reservados.</p>
+
+
+</footer>
+
+
+
+
+
+
+</main>
+
+
+<footer>
+
+
+
+</footer>
 </html>
