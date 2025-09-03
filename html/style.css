@@ -125,4 +125,63 @@ nav a{
     background-color: #000000;
     color: #b0f6f2;
 }
+.secao {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.secao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+.secao p {
+    font-size: 1rem;
+    line-height: 1.5
+}
+.secao h2:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.secao h2::after{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.secao h2::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card-projeto img{
+    width: 20%;
+    height: 20%;
+}
+
+.container-sobre{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.imagem-sobre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: right;
+    align-items: left;
+    justify-content: center;
+    display: flex;
+
+}
 
