@@ -138,7 +138,7 @@ nav a{
     text-align: center;
 }
 .secao p {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.5
 }
 .secao h2:after{
@@ -166,12 +166,13 @@ nav a{
 .card-projeto img{
     width: 20%;
     height: 20%;
+    border-radius: 15%;
 }
 
 .container-sobre{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .imagem-sobre img{
@@ -182,6 +183,51 @@ nav a{
     align-items: left;
     justify-content: center;
     display: flex;
+    border-radius: 5%;
+    box-shadow: 0px 4px 18px rgba(255, 255, 255, 0.541);
 
+}
+.grid-portifolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem 2rem ;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    margin :1rem 1rem;
+}
+.grid-portifolio:hover{
+    opacity: 1;
+}
+.card-projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 15%;
+    box-shadow: 0px 4px 18px rgba(255, 255, 255, 0.541);
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    margin: 1rem 1rem;
+}
+.card-projeto:hover{
+    opacity: 0.6;
+}
+.card-projeto img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 15%;
+    box-shadow: 0px 4px 18px rgba(255, 255, 255, 0.541);
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    margin :1rem 1rem;
+}
+.card-projeto:hover img{
+    opacity: 1;
 }
 
