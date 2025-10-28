@@ -10,7 +10,7 @@ class Contato(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     mensagem = db.Column(db.Text, nullable=False)
    
-@app.route('/'methods=['GET', 'POST'])
+@app.route('/',methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         nome = request.form['nome']
