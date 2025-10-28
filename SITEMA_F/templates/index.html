@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <style>
+        /* CSS com o tema Azul e Branco */
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f4f8; /* Um azul bem claro, quase branco */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff; /* Fundo branco */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2 {
+            color: #0056b3; /* Azul escuro para títulos */
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        /* Estilos do Formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Espaço entre os campos */
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #004a99; /* Azul médio */
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus {
+            border-color: #007bff; /* Borda azul ao focar */
+            outline: none;
+            box-shadow: 0 0 5px rgba(0,123,255,0.3);
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Botão com fundo azul */
+            color: white; /* Texto branco */
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Azul mais escuro no hover */
+        }
+
+        /* Estilos da Lista/Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        thead tr {
+            background-color: #007bff; /* Cabeçalho da tabela azul */
+            color: white; /* Texto branco */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8f9fa; /* Linhas alternadas (branco/cinza claro) */
+        }
+
+        .lista-vazia {
+            text-align: center;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Funcionários</h1>
+        
+        <form action="/cadastrar" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+            </div>
+            
+            <button type="submit">Cadastrar Funcionário</button>
+        </form>
+
+        <hr style="margin-top: 30px; border: 1px solid #eee;">
+        <h2>Funcionários Cadastrados</h2>
+
+        {% if funcionarios %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for func in funcionarios %}
+                    <tr>
+                        <td>{{ func.nome }}</td>
+                        <td>{{ func.email }}</td>
+                        <td>{{ func.cargo }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p class="lista-vazia">Nenhum funcionário cadastrado ainda.</p>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
